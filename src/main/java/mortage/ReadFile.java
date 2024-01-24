@@ -57,6 +57,9 @@ public class ReadFile {
 
             myReader.close();
 
+            //Moving on to the calculation with the given data.
+            new Calculator().Calculation(customerName,totalLoan,interestRate,years);
+
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
