@@ -32,27 +32,16 @@ public class ReadFile {
                 boolean matchFound = matcher.find();
 
 
-                System.out.println(data);
+
 
                 //If matches exist add to list
                 if(matchFound) {
-                    System.out.println("Match found");
-                    System.out.println(matcher.group());
                     customerName.add(matcher.group(1).replace(","," "));
                     totalLoan.add(Float.valueOf(matcher.group(2)));
                     interestRate.add(Float.valueOf(matcher.group(3)));
                     years.add(Float.valueOf(matcher.group(4)));
 
-                } else {
-                    System.out.println("Match not found");
                 }
-            }
-            for(int i = 0; i < customerName.size(); i++) {
-                System.out.println(customerName.get(i));
-                System.out.println(totalLoan.get(i));
-                System.out.println(interestRate.get(i));
-                System.out.println(years.get(i));
-
             }
 
             myReader.close();
