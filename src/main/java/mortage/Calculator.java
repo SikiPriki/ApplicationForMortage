@@ -8,6 +8,7 @@ public class Calculator {
 
     //This calcualtes and returns the fixed monthly  mortage when called and given the values
     public float FixedMonthlyPayment(float totalLoan, float interestRate, float year){
+
         //changing years to total payments by multiplying with 12
         float totalPayments= year*12;
 
@@ -26,6 +27,7 @@ public class Calculator {
         float fixedPayment= (totalLoan*(monthlyIntrest*poweredClaculationPart))/(poweredClaculationPart-1);
         return fixedPayment;
     }
+
     public void Calculation(List<String> customerName , List<Float> totalLoan,
                             List<Float> interestRate , List<Float> years){
 

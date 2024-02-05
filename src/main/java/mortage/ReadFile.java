@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ReadFile {
-    public static void main(String[] args) {
+    public  ReadFile() {
         List<String> customerName = new ArrayList<String>();
         List<Float> totalLoan = new ArrayList<Float>();
         List<Float> interestRate = new ArrayList<Float>();
